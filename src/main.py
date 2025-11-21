@@ -3,8 +3,8 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI, Response
 from fastapi.middleware.cors import CORSMiddleware
 
-from service.config import config
-from service.router import router as api_router
+from src.service.config import config
+from src.service.router import router as api_router
 
 
 # -- init app --
@@ -30,4 +30,4 @@ def healthz():
     return Response(status_code=204)
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="127.0.0.1", port=9090, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=9090, reload=True)

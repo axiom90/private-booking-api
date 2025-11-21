@@ -3,3 +3,4 @@ uvicorn==0.35.0
 pydantic[email]==2.11.7
 pydantic-settings==2.10.1
 supabase==2.24.0
+magnum==21.0.1
