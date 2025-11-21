@@ -1,3 +1,24 @@
+# secrets written by scripts
+
+console.env
+certs/
+nginx/htpasswd/
+
+# secret configs
+
+*-secret.json
+*-secret.yml
+*-secret.yaml
+*-secret.ini
+
+
+# local scripts
+
+*-local.bat
+*-local.sh
+*-local.html
+*-local.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
